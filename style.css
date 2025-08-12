@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0a0f3c, #1b2a49);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Efek petir halus */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('https://i.ibb.co/7y8k2Vf/lightning-effect.png') repeat;
+    opacity: 0.05;
+    animation: flash 3s infinite;
+    pointer-events: none;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 0.05; }
+    50% { opacity: 0.1; }
+}
+
+header {
+    padding: 50px 20px;
+}
+
+.about, .projects {
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
