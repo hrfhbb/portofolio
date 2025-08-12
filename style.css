@@ -7,6 +7,15 @@ body {
     overflow-x: hidden;
 }
 
+.profile-pic {
+    width: 200px;         /* Ukuran foto */
+    height: auto;         /* Menjaga proporsi */
+    display: block;       /* Supaya posisinya rapi */
+    margin: 0 auto 15px;  /* Tengah + jarak bawah */
+    border: 2px solid #ccc; /* Bingkai tipis */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Bayangan */
+}
+
 /* Efek petir halus */
 body::before {
     content: "";
