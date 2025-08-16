@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Ikon Font Awesome (untuk ikon sosial) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-    <img src="foto.jpeg" alt="Foto Harif Habibi" class="profile-pic">
-    <h1>Halo, Saya Harif Habibi</h1>
-    <p>Menulis kode & Software Engineering | Freelance Programmer</p>
-</header>
+        <!-- Navigasi -->
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
 
+        <!-- Foto Profil dan Judul -->
+        <img src="foto.jpeg" alt="Foto Harif Habibi" class="profile-pic">
+        <h1>Halo, Saya Harif Habibi</h1>
+        <p>Menulis kode & Software Engineering | Freelance Programmer</p>
+    </header>
 
-    <section class="about">
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
         <h2>Tentang Saya</h2>
         <p>Saya seorang web developer pemula yang menyukai tantangan baru. Saat ini sedang mengerjakan beberapa proyek website dan terus belajar teknologi terbaru.</p>
     </section>
 
-    <section class="projects">
+    <!-- Proyek -->
+    <section id="projects" class="projects">
         <h2>Proyek Saya</h2>
         <ul>
             <li>Website portofolio pribadi</li>
@@ -28,8 +40,33 @@
         </ul>
     </section>
 
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Saya</h2>
+        <p>Email: <a href="mailto:harifhabibi1911@gmail.com">harifhabibi1911@gmail.com</a></p>
+
+        <!-- Tombol CTA -->
+        <a href="mailto:harifhabibi1911@gmail.com">Kirim Email</a>
+
+        <!-- Media Sosial -->
+        <div class="social-links">
+            <p>Ikuti saya di:</p>
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+            </a> |
+            <a href="https://instagram.com/harifh__" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a> |
+            <a href="https://www.linkedin.com/in/harif-habibi" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>© 2025 Harif Habibi</p>
     </footer>
 </body>
 </html>
+
