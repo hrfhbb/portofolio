@@ -6,6 +6,15 @@
     font-family: Arial, sans-serif;
 }
 
+.profile-pic {
+    width: 150px;       /* lebar foto */
+    height: 150px;      /* tinggi foto */
+    object-fit: cover;  /* supaya tidak gepeng */
+    border-radius: 50%; /* supaya foto bulat */
+    margin-bottom: 15px;
+    display: block;
+}
+
 /* Warna dasar dan layout */
 body {
     background-color: #0d1117;
