@@ -1,86 +1,86 @@
-body {
+/* Reset margin dan padding */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #0a0f3c, #1b2a49);
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
 }
 
-/* Foto profil */
-.profile-pic {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-    border: 2px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+/* Warna dasar dan layout */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-/* Efek petir halus */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: url('https://i.ibb.co/7y8k2Vf/lightning-effect.png') repeat;
-    opacity: 0.05;
-    animation: flash 3s infinite;
-    pointer-events: none;
-}
-
-@keyframes flash {
-    0%, 100% { opacity: 0.05; }
-    50% { opacity: 0.1; }
-}
-
+/* Header */
 header {
-    padding: 50px 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #8b949e;
 }
 
 /* Navigasi */
+nav {
+    background: #21262d;
+    padding: 10px 0;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
 }
+
 nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline;
+    margin: 0 15px;
 }
+
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #58a6ff;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1f6feb;
 }
 
 /* Section */
-.about, .projects, .contact {
-    padding: 30px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 20px;
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #161b22;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Tombol */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* Sosial */
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    font-size: 20px;
+section h2 {
+    color: #58a6ff;
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    margin-top: 30px;
 }
